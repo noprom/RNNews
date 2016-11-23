@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-var Main = require('./component/Main');
+var Main = require('./Component/Main');
 
 export default class RNNews extends Component {
   render() {

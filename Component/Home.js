@@ -85,8 +85,7 @@ var Home = React.createClass({
                 this.dealWithData(jsonData);
             })
             .catch((error)=>{
-                console.log(error);
-                if(error) {
+                if(error){
                    // 网络请求失败,就用本地数据
                     console.log('网络请求失败');
                     var jsonData = LocalData[this.props.key_word];
@@ -120,7 +119,7 @@ var Home = React.createClass({
             dataSource:this.state.dataSource.cloneWithRows(listDataArr),
         });
 
-        // console.log(headerArr,listDataArr);
+        console.log(headerArr,listDataArr);
     },
 });
 
